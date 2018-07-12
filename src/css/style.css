@@ -59,7 +59,10 @@ header {
         font-weight: 500;
         line-height: 24px;
         text-transform: uppercase;
-        letter-spacing: 1.2px; }
+        letter-spacing: 1.2px;
+        -webkit-transition: 0.2s all;
+        -o-transition: 0.2s all;
+        transition: 0.2s all; }
         header #menu-container .menu-container-item .menu-link:hover {
           color: #10c9c3; }
       header #menu-container .menu-container-item #here {
@@ -102,7 +105,10 @@ main {
       height: 303px;
       background-color: #838383;
       -webkit-box-sizing: content-box;
-      box-sizing: content-box; }
+      box-sizing: content-box;
+      -webkit-transition: 0.2s all;
+      -o-transition: 0.2s all;
+      transition: 0.2s all; }
       main #content #grid .grid-item .content {
         z-index: 1;
         width: 100%;
@@ -110,7 +116,10 @@ main {
         position: relative;
         top: 0;
         left: 0;
-        opacity: 100%; }
+        opacity: 1;
+        -webkit-transition: 0.3s all;
+        -o-transition: 0.3s all;
+        transition: 0.3s all; }
         main #content #grid .grid-item .content img {
           width: 100%;
           height: 100%;
@@ -123,7 +132,7 @@ main {
         main #content #grid .grid-item:hover .view {
           opacity: 1; }
         main #content #grid .grid-item:hover .content {
-          opacity: 0%; }
+          opacity: 0; }
       main #content #grid .grid-item .view {
         position: absolute;
         top: 50%;
@@ -131,7 +140,10 @@ main {
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        opacity: 0; }
+        opacity: 0;
+        -webkit-transition: 0.2s all;
+        -o-transition: 0.2s all;
+        transition: 0.2s all; }
 
 footer {
   position: relative;
@@ -181,6 +193,11 @@ footer {
       -ms-flex-pack: start;
       justify-content: flex-start;
       align-item: flex-start; }
+
+a {
+  -webkit-transition: 0.2s all;
+  -o-transition: 0.2s all;
+  transition: 0.2s all; }
 
 a:hover {
   color: #10c9c3; }
